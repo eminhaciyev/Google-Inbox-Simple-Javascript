@@ -1,0 +1,287 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #4285F4;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+nav .navTitle i {
+  color: white;
+  font-size: 20px;
+}
+nav .navTitle h3 {
+  font-size: 20px;
+  color: white;
+}
+nav .toLeft {
+  display: none;
+}
+nav .inputBackColor {
+  background-color: rgba(113, 164, 247, 0.4);
+}
+nav .pinBack {
+  position: relative;
+  width: 37px;
+  height: 20px;
+  background: blue;
+  border-radius: 20px;
+  display: inline-block;
+}
+nav .pin {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 13%;
+}
+nav .pinBtn {
+  outline: none;
+  border-radius: 100%;
+  border: none;
+  background-color: #4285F4;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+nav .pinBtn i {
+  font-size: 10px;
+  transform: rotate(20deg);
+}
+nav .hongouts {
+  position: relative;
+  margin-left: 15px;
+  display: inline-block;
+}
+nav .hongouts img {
+  margin-bottom: 7px;
+}
+nav .overlayCard {
+  position: absolute;
+  top: 44px;
+  right: -90px;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+}
+nav .google {
+  position: relative;
+  margin-left: 15px;
+  display: inline-block;
+}
+nav .google i {
+  font-size: 18px;
+}
+nav .overlayGmail {
+  position: absolute;
+  top: 44px;
+  z-index: 100;
+  right: -70px;
+  width: 320px;
+  height: 300px;
+  display: none;
+  overflow-y: scroll;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+nav .bell {
+  margin-left: 15px;
+  display: inline-block;
+}
+nav .bellBtn {
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+nav .bell .bellBtn i {
+  font-size: 15px;
+}
+nav .overlayGoogle {
+  position: absolute;
+  top: 44px;
+  right: -30px;
+  width: 300px;
+  height: 400px;
+  opacity: 0;
+}
+
+.overlayInput {
+  position: fixed;
+  top: -287px;
+  left: 230px;
+  width: 66%;
+  height: 341px;
+  transition: all .4s ease-in-out;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+#middleSection {
+  position: relative;
+  width: 100%;
+  top: 60px;
+  height: 620px;
+}
+#middleSection .nothingPinned {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  display: none;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+#middleSection .nothingPinned > img {
+  width: 200px;
+}
+#middleSection .nothingPinned > .circlePin {
+  position: absolute;
+  top: -59px;
+  right: -42px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: -1;
+}
+#middleSection #leftSide {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 200px;
+  height: 900px;
+  transition: all .3s ease-in-out;
+  border: 1px solid black;
+  position: fixed;
+  top: 60px;
+  overflow-y: scroll;
+}
+#middleSection .middleNames {
+  position: absolute;
+  top: 12%;
+  left: 17%;
+  width: 66%;
+  height: 317px;
+}
+#middleSection .middleNames {
+  height: 600px;
+}
+#middleSection .middleNames p {
+  display: inline-block;
+}
+#middleSection .middleNames > .images > ul {
+  position: relative;
+  padding: 0;
+}
+#middleSection .middleNames > .images > ul > li:first-child {
+  padding-top: 10px;
+}
+#middleSection .middleNames > .images > ul li {
+  list-style: none;
+  padding-bottom: 15px;
+  border-bottom: 1px solid aqua;
+}
+#middleSection .middleNames > .images > ul li .icons1 {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+#middleSection .middleNames > .images > ul li .icons2 {
+  display: inline-block;
+  position: absolute;
+  top: 12%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons2:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li .icons3 {
+  display: inline-block;
+  position: absolute;
+  top: 22%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons3:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li .icons4 {
+  display: inline-block;
+  position: absolute;
+  top: 32%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons4:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li .icons5 {
+  display: inline-block;
+  position: absolute;
+  top: 42%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons5:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li .icons6 {
+  display: inline-block;
+  position: absolute;
+  top: 52%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons6:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li .icons7 {
+  display: inline-block;
+  position: absolute;
+  top: 62%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons7:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li .icons8 {
+  display: inline-block;
+  position: absolute;
+  top: 72%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons8:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li .icons9 {
+  display: inline-block;
+  position: absolute;
+  top: 82%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons9:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li .icons10 {
+  display: inline-block;
+  position: absolute;
+  top: 92%;
+  right: 40px;
+  opacity: 0;
+}
+#middleSection .middleNames > .images > ul li .icons10:hover {
+  opacity: 1;
+}
+#middleSection .middleNames > .images > ul li > i {
+  padding-left: 5px;
+}
+#middleSection img {
+  border-radius: 100%;
+  border-radius: 100%;
+}

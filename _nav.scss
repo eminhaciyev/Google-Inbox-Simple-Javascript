@@ -1,0 +1,116 @@
+nav{ 
+    position: fixed;
+    z-index: 999;   
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 60px;
+    background-color: $navBackcolor;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    .navTitle i{
+       color: $contentColor;
+        font-size: 20px;
+    }
+    .navTitle h3{
+        font-size: 20px;
+        color: $contentColor;
+    }
+   .toLeft{
+       display: none;
+   }
+    .inputBackColor{
+        background-color: rgba(113,164,247,.4)        
+    }    
+    .pinBack{
+        position: relative;
+        width: 37px;
+        height: 20px;       
+        background: blue;
+        border-radius: 20px;
+        display:inline-block;
+    }
+    .pin{
+        position: absolute;
+        top: 0;
+        left: -1px;
+        width: 13%;
+    }
+    .pinBtn{
+       outline: none;
+        border-radius: 100%;
+        border: none;
+        background-color: $navBackcolor;
+        box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    }
+    .pinBtn i{  
+        font-size: 10px;
+        transform: rotate(20deg);
+    }
+    //hongouts
+    .hongouts {
+        position: relative;     
+        margin-left: 15px;
+        display:inline-block;
+    }
+    .hongouts img{
+        margin-bottom: 7px;
+    }
+    .overlayCard{
+        position: absolute;
+        top: 44px;
+        right: -90px;
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+    .google{
+        position: relative;
+        margin-left: 15px;
+        display: inline-block;
+    }
+    .google i{
+        font-size: 18px;
+    }
+    .overlayGmail{
+        position: absolute;
+        top: 44px;
+        z-index: 100;
+        right: -70px;
+        width: 320px;
+        height: 300px;
+        display: none;     
+        overflow-y:scroll;
+        box-shadow: 0 2px 10px rgba(0,0,0,.2)
+    }
+    .bell{
+        margin-left: 15px;
+        display: inline-block;
+    }
+    .bellBtn{
+        position: relative;
+        border-radius: 50%;
+        border:none;
+        background-color: white;
+        outline: none;
+    }
+    .bell .bellBtn i{
+        font-size: 15px;
+    }
+    .overlayGoogle{
+        position: absolute;
+        top: 44px;
+        right: -30px;
+        width: 300px;
+        height: 400px;
+        opacity: 0;
+    }
+}
+.overlayInput{
+    position: fixed;
+    top: -287px;
+    left: 230px;       
+    width: 66%;
+    height: 341px;
+    transition: all .4s ease-in-out;    
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);  
+  } 

@@ -1,0 +1,167 @@
+#middleSection{
+    position: relative;
+    width: 100%;
+    top: 60px;   
+    height: 620px;
+    .nothingPinned{
+        position: absolute;
+        top: 40%;
+        left: 50%;        
+        display: none;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        >img{
+            width: 200px;
+        }
+        >.circlePin{
+            position: absolute;
+            top: -59px;
+            right: -42px;
+            width: 500px;
+            height: 500px;
+            // border: 1px solid black;
+            border-radius: 50%;
+            // background-color: #7BAAF7;
+            z-index: -1;
+        }
+    }
+    #leftSide{
+        position: absolute;
+        top: 0;
+        left: -30%;
+        width: 200px;
+        height: 900px;
+        transition: all .3s ease-in-out;
+        border: 1px solid black;
+        position: fixed;
+        top: 60px;
+        overflow-y: scroll;
+    }
+    .middleNames{
+        position: absolute;
+        top: 12%;
+        left: 17%;
+        width: 66%;
+        height: 317px;
+    }
+    .middleNames{
+        height: 600px;
+        p{
+            display: inline-block
+        }
+        >.images{
+            >ul{
+                position: relative;
+                padding: 0;
+                >li:first-child{
+                    padding-top: 10px;
+                }
+                li{
+                    .icons1{
+                        display: inline-block;
+                        position: absolute;
+                        top: 0;
+                        right: 40px;
+                    }
+                    .icons2{
+                        display: inline-block;
+                        position: absolute;
+                        top: 12%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    } .icons3{
+                        display: inline-block;
+                        position: absolute;
+                        top: 22%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    } .icons4{
+                        display: inline-block;
+                        position: absolute;
+                        top: 32%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    } .icons5{
+                        display: inline-block;
+                        position: absolute;
+                        top: 42%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    } .icons6{
+                        display: inline-block;
+                        position: absolute;
+                        top: 52%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    } .icons7{
+                        display: inline-block;
+                        position: absolute;
+                        top: 62%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    } .icons8{
+                        display: inline-block;
+                        position: absolute;
+                        top: 72%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    } .icons9{
+                        display: inline-block;
+                        position: absolute;
+                        top: 82%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    }
+                    .icons10{
+                        display: inline-block;
+                        position: absolute;
+                        top: 92%;
+                        right: 40px;
+                        opacity: 0;
+                        &:hover{
+                        opacity: 1;
+                        }
+                    }
+                    >i{
+                        
+                        padding-left: 5px;
+                    }
+                    list-style: none;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid aqua;
+
+                }
+            }
+        }
+    }   
+    img{
+        border-radius: 100%;
+        // padding-bottom: 25px;
+        border-radius: 100%;
+
+    }
+}
